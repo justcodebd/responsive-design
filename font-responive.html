@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            font-size: 16px;
+        }
+        .responsive-heading {
+            font-size: 24px;
+        }
+        /* 600px er ag porjonto */
+        @media only screen and (max-width:600px) {
+            body {
+                font-size: 14px;
+            }
+            .responsive-heading {
+                font-size: 20px;
+                color: red;
+            }
+        }
+    /* 600 px er por theke  */
+        @media only screen and (min-width:601px) {
+            .responsive-heading {
+                font-size: 28px;
+                color: green;
+            }
+        }
+        @media only screen and (min-width:1025px) {
+            .responsive-heading {
+                font-size: 46px;
+                color: crimson;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt?</p>
+    <h1 class="responsive-heading">Responsive heading </h1>
+</body>
+
+</html>
